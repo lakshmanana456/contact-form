@@ -21,51 +21,51 @@
     font-style: normal;
   }
 
-  
-  .nameError,.lastnameError,.emailError,.passwordError {
+
+  .nameError,
+  .emailError,
+  .messageError {
     display: none;
   }
-
 </style>
 
-<body class="poppins-regular">
-  <form action="" class="myform">
-    <div class="container  flex flex-col items-center mt-10">
-      <h1 style="font-size: 2.5vw; font-weight: bold; margin-bottom: 1.5vw; color: black;">Contact Form</h1>
-      <input class="name rounded" type="text" placeholder="Name"
-        style="border: solid black 1px; width: 25%; outline: none; padding: 0.5vw; margin-bottom: 1.5vw;">
+<body class="poppins-regular bg-white ">
 
-      <p class="nameError"
-        style="color: red; width: 25%; text-align: left; font-size: 0.7vw; position: absolute; top: 22%;">
-        Firstname should contain only alphabets</p>
+  <section class="relative flex justify-center items-center">
+
+    <div class="bg-green-100 rounded flex flex-col justify-center shadow-xl  gap-7 p-10" style=" margin-top: 8%;">
 
 
+      <div>
+        <h1 class="text-2xl font-bold w-80 text-center">Contact Form</h1>
+      </div>
+      <div class=" relative">
+        <input type="text" class="name w-80 rounded" placeholder="Name" style="padding: 1%; border: solid black 1px;">
+        <p class="nameError absolute text-sm text-red-500" style="padding-left: 1%;">Name error</p>
+      </div>
 
-      <input class="email rounded" type="text" placeholder="Email address"
-        style="width: 25%; outline: none; border: solid black 1px; padding: 0.5vw; margin-bottom: 1.5vw; position: relative;">
+      <div class="relative">
+        <input type="text" class="email w-80 rounded " placeholder="Email address"
+          style="padding: 1%; border: solid black 1px;">
+        <p class="emailError absolute text-sm text-red-500" style=" padding-left: 1%;">Email error</p>
+      </div>
 
-      <p class="emailError"
-        style="color: red; width: 25%; text-align: left; font-size: 0.7vw; position: absolute; top: 31%;">
-        Enter valid email</p>
-
-         <!-- <input class="Message rounded" type="text" placeholder="Email address"
-        style="width: 25%; height: 30%; outline: none; border: solid black 1px; padding: 0.5vw; margin-bottom: 1.5vw; position: relative;"> -->
-
-        <textarea placeholder="Enter message here.." name="" id="" class="rounded" style="outline: none; padding: 0.5vw; border: solid black 1px; width: 25%;"></textarea>
-      <p class="MessageError"
-        style="color: red; width: 25%; text-align: left; font-size: 0.7vw; position: absolute; top: 39.7%;">
-        </p>
-
-      
-
-      <input  class="signup rounded text-white font-bold"
-      style=" width: 25%; align-items: start; padding: 0.5vw; color: white; background-color: black; margin-top: 2vw;" type="submit"
-      value="Send">
-
+      <div class="relative">
+        <textarea type="text" class="message w-80 rounded" placeholder="Write message here..."
+          style="padding: 1%; border: solid black 1px;"></textarea>
+        <p class="messageError absolute text-sm  text-red-500" style="padding-left: 1%; margin-top: -0.5vw;">Enter a message between 1-200 words</p>
+      </div>
+      <div>
+        <input class="submit rounded" type="submit" value="Send message"
+          style="background-color: black; color: white;  padding: 2%;">
+      </div>
     </div>
-  </form>
 
- <script src="script.js"></script>
+  </section>
+
+
+
+  <script src="script.js"></script>
 </body>
 
 </html>
