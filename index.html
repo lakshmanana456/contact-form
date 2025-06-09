@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>validation</title>
+</head>
+<!-- Tailwind css cdn link -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+<!-- Google Fonts link for Poppins -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+<!--  -->
+<style>
+  .poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  
+  .nameError,.lastnameError,.emailError,.passwordError {
+    display: none;
+  }
+
+</style>
+
+<body class="poppins-regular">
+  <form action="" class="myform">
+    <div class="container  flex flex-col items-center mt-10">
+      <h1 style="font-size: 2.5vw; font-weight: bold; margin-bottom: 1.5vw; color: black;">Contact Form</h1>
+      <input class="name rounded" type="text" placeholder="Name"
+        style="border: solid black 1px; width: 25%; outline: none; padding: 0.5vw; margin-bottom: 1.5vw;">
+
+      <p class="nameError"
+        style="color: red; width: 25%; text-align: left; font-size: 0.7vw; position: absolute; top: 22%;">
+        Firstname should contain only alphabets</p>
+
+
+
+      <input class="email rounded" type="text" placeholder="Email address"
+        style="width: 25%; outline: none; border: solid black 1px; padding: 0.5vw; margin-bottom: 1.5vw; position: relative;">
+
+      <p class="emailError"
+        style="color: red; width: 25%; text-align: left; font-size: 0.7vw; position: absolute; top: 31%;">
+        Enter valid email</p>
+
+         <!-- <input class="Message rounded" type="text" placeholder="Email address"
+        style="width: 25%; height: 30%; outline: none; border: solid black 1px; padding: 0.5vw; margin-bottom: 1.5vw; position: relative;"> -->
+
+        <textarea placeholder="Enter message here.." name="" id="" class="rounded" style="outline: none; padding: 0.5vw; border: solid black 1px; width: 25%;"></textarea>
+      <p class="MessageError"
+        style="color: red; width: 25%; text-align: left; font-size: 0.7vw; position: absolute; top: 39.7%;">
+        </p>
+
+      
+
+      <input  class="signup rounded text-white font-bold"
+      style=" width: 25%; align-items: start; padding: 0.5vw; color: white; background-color: black; margin-top: 2vw;" type="submit"
+      value="Send">
+
+    </div>
+  </form>
+
+ <script src="script.js"></script>
+</body>
+
+</html>
